@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Swapnaneel-afk/my-game-zone-app.git/static/css/main.85a8e7be.css",
+    "main.js": "/Swapnaneel-afk/my-game-zone-app.git/static/js/main.44abb441.js",
+    "index.html": "/Swapnaneel-afk/my-game-zone-app.git/index.html",
+    "main.85a8e7be.css.map": "/Swapnaneel-afk/my-game-zone-app.git/static/css/main.85a8e7be.css.map",
+    "main.44abb441.js.map": "/Swapnaneel-afk/my-game-zone-app.git/static/js/main.44abb441.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85a8e7be.css",
+    "static/js/main.44abb441.js"
+  ]
+}
