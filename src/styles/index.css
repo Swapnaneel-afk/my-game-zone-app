@@ -1,0 +1,118 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Game list styles */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Game card styles */
+.game-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-image {
+  background-color: #ddd;
+  height: 150px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.game-card h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.game-card button {
+  width: 100%;
+}
+.welcome-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.welcome-section h2 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.welcome-section p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.welcome-section button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.welcome-section button:hover {
+  background-color: #555;
+}
+
+.game-grid {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
