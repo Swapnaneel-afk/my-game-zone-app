@@ -43,3 +43,13 @@
   gap: 20px;
   padding: 20px;
 }
+.game-card {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.game-card .game-image,
+.game-card h3,
+.game-card button {
+  transform: translateZ(20px);
+}
