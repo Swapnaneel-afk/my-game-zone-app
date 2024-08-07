@@ -1,9 +1,12 @@
+// App.js
 import React, { useState } from "react";
 import Header from "./components/Header";
 import GameList from "./components/GameList";
+import Preloader from "./components/PreLoader";
 import "./styles/index.css";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
   const [showGames, setShowGames] = useState(false);
   const games = [
     { id: 1, name: "Tic-Tac-Toe" },
@@ -19,10 +22,16 @@ const App = () => {
 
   return (
     <div className="App">
-      {!showGames ? (
-        <Header onStartPlaying={handleStartPlaying} />
+      {loading ? (
+        <Preloader setLoading={setLoading} />
       ) : (
-        <GameList games={games} />
+        <>
+          {!showGames ? (
+            <Header onStartPlaying={handleStartPlaying} />
+          ) : (
+            <GameList games={games} />
+          )}
+        </>
       )}
     </div>
   );
